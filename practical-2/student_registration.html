@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .form-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #444444;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h1>Student Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname">
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="inline-group">
+                    <label><input type="radio" name="g" value="male"> Male</label>
+                    <label><input type="radio" name="g" value="female"> Female</label>
+                    <label><input type="radio" name="g" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course">
+                    <option value="bca">BCA</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="ba">BA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies:</label>
+                <div class="inline-group">
+                    <label><input type="checkbox" value="reading"> Reading</label>
+                    <label><input type="checkbox" value="sports"> Sports</label>
+                    <label><input type="checkbox" value="music"> Music</label>
+                    <label><input type="checkbox" value="dancing"> Dancing</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
