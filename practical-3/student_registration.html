@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form>
+            <div class="field">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname">
+            </div>
+
+            <div class="field">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname">
+            </div>
+
+            <div class="field">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="field">
+                <label>Gender:</label>
+                <input type="radio" name="g" id="male"><label for="male" class="inline-label">Male</label>
+                <input type="radio" name="g" id="female"><label for="female" class="inline-label">Female</label>
+                <input type="radio" name="g" id="other"><label for="other" class="inline-label">Other</label>
+            </div>
+
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="field">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile">
+            </div>
+
+            <div class="field">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="4"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="course">Course:</label>
+                <select id="course">
+                    <option value="bca">BCA</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="ba">BA</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Hobbies:</label>
+                <input type="checkbox" id="reading"><label for="reading" class="inline-label">Reading</label>
+                <input type="checkbox" id="sports"><label for="sports" class="inline-label">Sports</label>
+                <input type="checkbox" id="music"><label for="music" class="inline-label">Music</label>
+                <input type="checkbox" id="dancing"><label for="dancing" class="inline-label">Dancing</label>
+            </div>
+
+            <div class="field">
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo">
+            </div>
+
+            <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
