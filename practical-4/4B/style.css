@@ -1,0 +1,81 @@
+body {
+    background-color: #f5a7cd;
+    justify-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.box {
+    background-color: #7dccad;
+    margin-top: 80px;
+    text-align: center;
+    height: 75vh;
+    width: 700px;
+    border: 2px solid #664d99;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #ffe98a;
+    text-align: center;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.heading_title,
+.buttons {
+    width: 50%;
+    display: inline block;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px; 
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    border: none;
+}
+
+#add {
+    background-color:#229b33;
+}
+
+#clear {
+    background-color:#cc0600;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    row-gap: 10px;
+    margin-top: 15px;
+}
+
+#task_id {
+    display: inline;
+}
+
+.task {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#delete {
+    background-color: #cc0600;
+    display: inline ;
+    margin-right: 0px;
+}
