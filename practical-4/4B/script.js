@@ -1,10 +1,30 @@
+let id_num = 0;
+let board = document.querySelector(".board");
+
 function addTask() {
     let task = prompt(`Enter Task: `);
-    let board = document.querySelector(".board");
-    return board.innerHTML = `<div class="task"> <h4 id="task_id">${task}</h4></div> <div> <button type="button" id="delete" onclick="delete()"> Delete </button></div>` + board.innerHTML;
+
+    if (task === '') {
+        alert("Task can't be empty");
+        return;
+    }
+    id_num += 1;
+    const newTaskDiv = document.createElement('div');
+    const newDelDiv = document.createElement('div');
+    
+    newTaskDiv.innerHTML = `<h4 id="task" class="${id_num}">${task}</h4>`
+    newDelDiv.innerHTML = `<button type="button" id="delete" class="${id_num}" onclick="deleteTask(this.class)"> Delete </button>`
+
+    board.append(newTaskDiv,newDelDiv);
 }
 
 function clearAll() {
-    let board = document.querySelector(".board");
     return board.innerHTML = ``;
+}
+
+function deleteTask(obj) {
+    const elements = document.querySelectorAll(`.${obj}`);
+    elements.forEach(element => {
+        element.remove();
+    });
 }
