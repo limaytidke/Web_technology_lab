@@ -64,6 +64,7 @@ function calcAll() {
     
     if (operator == '+') {
         display.innerText = num1 + num2;
+        //display.innerText = 'Hello world';
     }
     else if (operator == '-') {
         display.innerText = num1 - num2;
