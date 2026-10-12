@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBites - College Canteen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampusBites Canteen</h1>
+        <button class="cart-btn" onclick="scrollToCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <div class="container" id="main-app-container">
+        <div class="categories">
+            <button class="cat-btn active" onclick="filterCategory('All', this)">All Items</button>
+            <button class="cat-btn" onclick="filterCategory('Snacks', this)">Snacks</button>
+            <button class="cat-btn" onclick="filterCategory('Meals', this)">Meals</button>
+            <button class="cat-btn" onclick="filterCategory('Beverages', this)">Beverages</button>
+            <button class="cat-btn" onclick="filterCategory('Desserts', this)">Desserts</button>
+        </div>
+
+        <div class="main-layout">
+            <div class="menu-section">
+                <div class="food-grid" id="food-grid">
+                </div>
+            </div>
+
+            <div class="cart-section" id="cart-section">
+                <h2>Your Order Cart</h2>
+                <ul class="cart-items-list" id="cart-items-list">
+                    <li class="empty-cart">Your cart is empty</li>
+                </ul>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">₹0</span>
+                </div>
+                <button class="checkout-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirmation-container" id="confirmation-container">
+        <h2>Order Placed Successfully! 🎉</h2>
+        <p>Thank you for ordering from CampusBites Canteen. Your food is being prepared.</p>
+        <div class="order-id" id="display-order-id">Order ID: # 001</div>
+        <p style="color: #666; font-size: 14px;">Please show this order ID at the counter when called.</p>
+        <button class="back-btn" onclick="resetToMenu()">Back to Menu</button>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
