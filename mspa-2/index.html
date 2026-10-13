@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" type="" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <h1>📚 Student Task Manager</h1>
+                <p>Stay on top of your studies, assignments, and exams!</p>
+            </div>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <div class="number" id="stat-total">0</div>
+            </div>
+            <div class="stat-card pending">
+                <h3>Pending</h3>
+                <div class="number" id="stat-pending">0</div>
+            </div>
+            <div class="stat-card completed">
+                <h3>Completed</h3>
+                <div class="number" id="stat-completed">0</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>✨ Add New Task</h2>
+            <form id="task-form">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="task-title">Task Title *</label>
+                        <input type="text" id="task-title" placeholder="e.g., Physics Chapter 4 Problem Set" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="task-desc">Description / Notes</label>
+                        <textarea id="task-desc" placeholder="Add any details, reading pages, or links..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-date">Due Date</label>
+                        <input type="date" id="task-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="task-priority">Priority Level</label>
+                        <select id="task-priority">
+                            <option value="Low">Low Priority</option>
+                            <option value="Medium" selected>Medium Priority</option>
+                            <option value="High">High Priority</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                    <span>➕ Add Task</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="controls-bar">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Search tasks by title...">
+            </div>
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="pending">Pending</button>
+                <button class="tab-btn" data-filter="completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-list" id="task-list">
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
