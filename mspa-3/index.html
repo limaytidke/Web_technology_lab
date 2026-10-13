@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch - Movie Explorer</title>
+    
+    <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="brand-title">🎬 CineSearch</h1>
+            <p class="brand-subtitle">Discover movies, ratings, release years, plots, and more instantly.</p>
+        </header>
+
+        <div class="search-wrapper">
+            <div class="search-input-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Search for movies (e.g., Inception, Batman)...">
+            </div>
+            <button id="search-btn" class="search-btn">Search Movies</button>
+        </div>
+
+        <div id="movies-container" class="movies-grid">
+            <div class="state-container">
+                <span class="state-icon">🍿</span>
+                <h3 class="state-title">Welcome to CineSearch</h3>
+                <p class="state-desc">Type a movie name above to explore titles, details, and reviews.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
